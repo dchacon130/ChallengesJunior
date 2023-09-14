@@ -7,6 +7,6 @@ app.include_router(fizzbuzz.router)
 
 @app.get('/')
 async def root():
-    return "Hola Multiplos de 3 y 5!!!"
+    return {"message": "Hola Multiplos de 3 y 5!!!"}
 
 #Run uvicorn server: uvicorn main:app --reload
